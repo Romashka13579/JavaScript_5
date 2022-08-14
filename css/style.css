@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+	overflow: hidden;
+    background: rgb(0, 0, 0);
+}
+#around-mouse{
+	position: absolute;
+	display: none;
+	width: 200px;
+	height: 200px;
+	background: radial-gradient(circle, rgba(253,187,45,1) 0%, rgba(253,215,45,0.7800655418417367) 16%, rgba(0,0,0,0) 70%);
+	border-radius: 50%;
+}
+.blocks{
+    position: relative;
+    padding: 14px 0px;
+    width: 1240px;
+    height: 700px;
+    margin: auto;
+}
+#hexagon {
+    position: relative;
+    float: left;
+	width: 120px;
+	height: 66px;
+    margin: 17px 2px 17px 2px;
+	background: rgb(53, 53, 53);
+}
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -30px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 30px solid rgb(53, 53, 53);
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -30px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 30px solid rgb(53, 53, 53);
+}
+#hexagon-2 {
+    position: relative;
+    float: left;
+	width: 60px;
+	height: 66px;
+    margin: 17px 2px 17px 0px;
+	background: rgb(53, 53, 53);
+}
+#hexagon-2:before {
+	content: "";
+	position: absolute;
+	top: -30px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-right: 60px solid transparent;
+	border-bottom: 30px solid rgb(53, 53, 53);
+}
+#hexagon-2:after {
+	content: "";
+	position: absolute;
+	bottom: -30px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-right: 60px solid transparent;
+	border-top: 30px solid rgb(53, 53, 53);
+}
+#hexagon-3 {
+    position: relative;
+    float: left;
+	width: 60px;
+	height: 66px;
+    margin: 17px 0px 17px 2px;
+	background: rgb(53, 53, 53);
+}
+#hexagon-3:before {
+	content: "";
+	position: absolute;
+	top: -30px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-bottom: 30px solid rgb(53, 53, 53);
+}
+#hexagon-3:after {
+	content: "";
+	position: absolute;
+	bottom: -30px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-top: 30px solid rgb(53, 53, 53);
+}
